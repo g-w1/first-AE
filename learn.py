@@ -113,8 +113,6 @@ def feedforward(weights, biases, a):
 def sigmoid(z):
     """The sigmoid function."""
     return 1.0/(1.0+np.exp(-z))
-    #return np.maximum(0,z)
 def sigmoid_prime(z):
     """Derivative of the sigmoid function."""
     return sigmoid(z)*(1-sigmoid(z))
-    #return (z>0) * 1
