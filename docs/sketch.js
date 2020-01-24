@@ -24,7 +24,7 @@ async function getData(inputs){
   function setup() {
     
     for (var i = 0; i<10; i++){
-        sliders.push(createSlider(0,100,0));
+        sliders.push(createSlider(0,30,0));
     }
     let canv = createCanvas(500, 500);
     canv.parent("canvasbox");
