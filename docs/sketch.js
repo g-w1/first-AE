@@ -13,7 +13,7 @@ async function getData(inputs){
     for (var i = 0; i<25; i++){
         for (var h = 0; h<25; h++){
             fill(output[i][h]*255);
-            rect(h*20,i*20,20,20);
+            rect(h*25,i*25,25,25);
         }
     // console.log(output);
     }
@@ -24,7 +24,7 @@ async function getData(inputs){
   function setup() {
     
     for (var i = 0; i<10; i++){
-        sliders.push(createSlider(0,30,0));
+        sliders.push(createSlider(0,30,0,.5));
     }
     let canv = createCanvas(500, 500);
     canv.parent("canvasbox");
