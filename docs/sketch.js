@@ -19,7 +19,7 @@ async function getData(inputs){
     }
     }
 
-
+var frame;
     var sliders = [];  
   function setup() {
     
@@ -33,11 +33,13 @@ async function getData(inputs){
   }
   
   function draw() {
+      if (frame %30 ==0){
     inputs = [];
     for (let i = 0;i<20;i++){
       inputs.push(sliders[i].value());
     }
-    getData(inputs);
+    getData(inputs);}
+      frame++;
   }
   function sigmoid(z){
   
