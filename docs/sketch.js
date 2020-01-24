@@ -6,7 +6,7 @@ async function getData(inputs){
     var weights = mydata.weights;
     var biases = mydata.biases;
     inputs = math.reshape(inputs,[10,1])
-    inputs = math.multiply(inputs,1000);
+    inputs = math.multiply(inputs,1);
     // console.log(weights[1]);
     output = sigmoid(math.add(math.multiply(weights[1],inputs),biases[1]));
     output = math.reshape(output,[25,25]);
