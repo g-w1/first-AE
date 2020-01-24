@@ -23,7 +23,7 @@ async function getData(inputs){
     var sliders = [];  
   function setup() {
     
-    for (var i = 0; i<10; i++){
+    for (var i = 0; i<20; i++){
         sliders.push(createSlider(0,30,0,.5));
     }
     let canv = createCanvas(500, 500);
